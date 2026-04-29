@@ -1,1 +1,156 @@
-# RentalFlow-privacy
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — RentalFlow</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f8faf9;
+      color: #1a2a26;
+      line-height: 1.75;
+    }
+    .header {
+      background: linear-gradient(160deg, #2D5E47 0%, #163832 70%, #051F20 100%);
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    .logo { font-size: 28px; font-weight: 800; color: #fff; letter-spacing: -0.5px; }
+    .logo span { color: #D4F0E4; }
+    .tagline { font-size: 14px; color: rgba(212,240,228,0.7); margin-top: 6px; }
+    .container { max-width: 720px; margin: 0 auto; padding: 40px 24px 80px; }
+    .updated {
+      display: inline-block;
+      background: #D4F0E4;
+      color: #033F20;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-bottom: 32px;
+    }
+    h1 { font-size: 28px; font-weight: 800; color: #033F20; margin-bottom: 8px; }
+    h2 {
+      font-size: 17px; font-weight: 700; color: #033F20;
+      margin: 36px 0 10px;
+      padding-left: 12px;
+      border-left: 3px solid #235347;
+    }
+    p { font-size: 15px; color: #2d3d39; margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { font-size: 15px; color: #2d3d39; margin-bottom: 6px; }
+    a { color: #235347; text-decoration: none; font-weight: 500; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: #fff;
+      border: 1px solid #e2ede9;
+      border-radius: 16px;
+      padding: 20px 24px;
+      margin-bottom: 12px;
+    }
+    .footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid #d4e8e0;
+      font-size: 13px;
+      color: #7a9e94;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <div class="logo">Rental<span>Flow</span></div>
+  <div class="tagline">Gestión de propiedades en renta</div>
+</div>
+
+<div class="container">
+  <span class="updated">Última actualización: 28 de abril de 2026</span>
+  <h1>Política de Privacidad</h1>
+  <p>Esta Política de Privacidad describe cómo <strong>RentalFlow</strong> ("la aplicación", "nosotros") recopila, usa y protege la información personal de los usuarios que utilizan nuestra aplicación móvil y web de gestión de propiedades en renta.</p>
+  <p>Al usar RentalFlow, aceptas las prácticas descritas en este documento. Si no estás de acuerdo, te pedimos que no uses la aplicación.</p>
+
+  <h2>1. Información que recopilamos</h2>
+  <div class="card">
+    <p><strong>Información de cuenta:</strong></p>
+    <ul>
+      <li>Dirección de correo electrónico (para autenticación)</li>
+      <li>Nombre de usuario (opcional, para personalizar el perfil)</li>
+    </ul>
+  </div>
+  <div class="card">
+    <p><strong>Datos de gestión que el usuario ingresa voluntariamente:</strong></p>
+    <ul>
+      <li>Información de propiedades (nombre, dirección, tipo, valor de inversión)</li>
+      <li>Datos de inquilinos (nombre, contacto, documento de identidad)</li>
+      <li>Contratos de arrendamiento (fechas, montos de renta, condiciones)</li>
+      <li>Registros de pagos (montos, fechas, métodos de pago, comprobantes de imagen)</li>
+    </ul>
+  </div>
+  <div class="card">
+    <p><strong>Datos técnicos:</strong></p>
+    <ul>
+      <li>Preferencias de la aplicación (tema visual, moneda seleccionada)</li>
+      <li>Registros de uso básicos para mejorar el rendimiento</li>
+    </ul>
+  </div>
+
+  <h2>2. Cómo usamos tu información</h2>
+  <p>Usamos los datos exclusivamente para:</p>
+  <ul>
+    <li>Proveer y mantener las funcionalidades de la aplicación</li>
+    <li>Autenticar tu identidad de forma segura</li>
+    <li>Sincronizar tus datos entre dispositivos</li>
+    <li>Enviarte correos relacionados con tu cuenta (restablecimiento de contraseña)</li>
+    <li>Mejorar la experiencia de la aplicación</li>
+  </ul>
+  <p><strong>No vendemos, alquilamos ni compartimos tu información personal con terceros con fines comerciales o publicitarios.</strong></p>
+
+  <h2>3. Almacenamiento y seguridad</h2>
+  <p>Todos los datos de RentalFlow se almacenan de forma segura a través de <a href="https://supabase.com" target="_blank">Supabase</a>, una plataforma de backend que implementa cifrado en tránsito (TLS) y en reposo. Cada usuario solo puede acceder a sus propios datos gracias a las políticas de seguridad a nivel de fila (Row Level Security) de PostgreSQL.</p>
+  <p>Las imágenes de comprobantes de pago se almacenan en Supabase Storage con acceso restringido exclusivamente al propietario de la cuenta.</p>
+
+  <h2>4. Retención de datos</h2>
+  <p>Conservamos tu información mientras tu cuenta esté activa. Puedes solicitar la eliminación completa de tu cuenta y todos los datos asociados en cualquier momento escribiéndonos al correo indicado en la sección de contacto.</p>
+
+  <h2>5. Servicios de terceros</h2>
+  <p>RentalFlow utiliza los siguientes servicios de terceros:</p>
+  <ul>
+    <li><strong>Supabase</strong> — Base de datos y autenticación (<a href="https://supabase.com/privacy" target="_blank">política de privacidad</a>)</li>
+    <li><strong>Google Play</strong> — Distribución de la aplicación Android (<a href="https://policies.google.com/privacy" target="_blank">política de privacidad</a>)</li>
+  </ul>
+  <p>No integramos redes publicitarias, herramientas de análisis de comportamiento ni rastreadores de terceros.</p>
+
+  <h2>6. Permisos de la aplicación</h2>
+  <p>RentalFlow puede solicitar los siguientes permisos en tu dispositivo:</p>
+  <ul>
+    <li><strong>Cámara / Galería:</strong> para adjuntar imágenes de comprobantes de pago</li>
+    <li><strong>Notificaciones:</strong> para alertas de vencimiento de contratos (opcional)</li>
+    <li><strong>Biometría:</strong> para acceso rápido y seguro (próximamente)</li>
+  </ul>
+  <p>Todos los permisos son opcionales y puedes revocarlos desde la configuración de tu dispositivo.</p>
+
+  <h2>7. Menores de edad</h2>
+  <p>RentalFlow está diseñado para uso profesional por adultos. No recopilamos intencionalmente información de personas menores de 18 años. Si detectamos que un menor ha creado una cuenta, eliminaremos sus datos de inmediato.</p>
+
+  <h2>8. Cambios a esta política</h2>
+  <p>Podemos actualizar esta Política de Privacidad ocasionalmente. Te notificaremos de cambios significativos mediante un aviso en la aplicación. El uso continuado de RentalFlow después de cualquier cambio constituye tu aceptación de la nueva política.</p>
+
+  <h2>9. Contacto</h2>
+  <p>Si tienes preguntas o solicitudes sobre tu privacidad, contáctanos en:</p>
+  <div class="card">
+    <p><strong>RentalFlow</strong><br/>
+    Correo electrónico: <a href="mailto:marguinzones91@gmail.com">marguinzones91@gmail.com</a></p>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 RentalFlow. Todos los derechos reservados.</p>
+    <p style="margin-top:4px">Esta política aplica a la aplicación RentalFlow en todas sus plataformas.</p>
+  </div>
+</div>
+
+</body>
+</html>
